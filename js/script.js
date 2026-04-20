@@ -1,3 +1,38 @@
+/* --- INSTÄLLNINGAR FÖR VECKANS VARA --- */
+const weeklyItem = {
+    title: "Vackra Plåtrosor",
+    description: "Handgjorda rosor i plåt som aldrig vissnar. Perfekta för både trädgård och inomhusbruk.",
+    price: "249 kr",
+    image: "images/Plåtrosor.jpg" 
+};
+
+/* --- FUNKTION FÖR ATT UPPDATERA SIDAN --- */
+function updateWeeklyItem() {
+    // Listan på alla ID:n vi behöver uppdatera (både mobil och desktop)
+    const suffixes = ['-desktop', '-mobile'];
+
+    suffixes.forEach(suffix => {
+        const titleEl = document.getElementById('weekly-item-title' + suffix);
+        const descEl = document.getElementById('weekly-item-desc' + suffix);
+        const priceEl = document.getElementById('weekly-item-price' + suffix);
+        const imgEl = document.getElementById('weekly-item-img' + suffix);
+
+        if (titleEl && descEl && priceEl && imgEl) {
+            titleEl.textContent = weeklyItem.title;
+            descEl.textContent = weeklyItem.description;
+            priceEl.textContent = weeklyItem.price;
+            imgEl.src = weeklyItem.image;
+            imgEl.alt = weeklyItem.title;
+        }
+    });
+}
+
+// Denna rad ser till att funktionen körs så fort fönstret laddats
+window.onload = updateWeeklyItem;
+
+
+
+
 
 /* Galleri           */
 const images = [

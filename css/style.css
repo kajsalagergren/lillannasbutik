@@ -53,40 +53,44 @@ main {
     color: #1b3022;
 }
 
-/* Style för text på hemsidan*/
-    .om-oss {
-        text-align: center; 
-    }
-
-/*style för rubrik på hemsidan*/
-.om-oss h2 {
-    color: #2b4128;
-    font-family:'Georgia', cursive ;
-    font-style: italic;
-    font-size: 3.5rem;
-    margin-top: 1rem;
-    
-
-    display: inline-block;
-    transform: scale(1.1, 1);
-    letter-spacing: 2px;
-
+/* Ger texten mer plats och gör den större med rem */
+.om-oss-section {
+    width: 100%;
+    /* 800px / 16 = 50rem */
+    max-width: 50rem !important; 
+    /* 64px / 16 = 4rem */
+    margin:1.5rem auto 4rem auto !important; 
 }
-/*Style för brödtexten om oss*/
-.om-oss p {
-    font-family:'Georgia', serif ;
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #332d28;
-    max-width: 550px;
-    margin: 0 auto;
+
+.om-oss-section h2 {
+    /* 40px / 16 = 2.5rem */
+    margin-bottom: 2rem;
+    font-size: 4rem; 
 }
+
+.om-oss-section p {
+    /* 21px / 16 = 1.3rem */
+    font-size: 1.3rem !important; 
+    /* Relativt radavstånd utan enhet (standardpraxis) */
+    line-height: 1.8 !important; 
+    color: #1b3022;
+}
+
+/* Fixar knapparna så de får mer luft */
 .button-container-hem {
-    text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem !important;
+    margin-bottom: 5rem !important;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem !important; 
+}
+
+/* Gör knapparna proportionerliga med rem */
+.button-container-hem .btn {
+    /* Topp/Botten 0.8rem, Sidor 2.5rem */
+    padding: 0.8rem 2.5rem !important;
+    font-size: 1.1rem !important;
+    border-radius: 0.5rem; /* Ca 8px */
 }
 .btn {
     background-color:#2b4128 ;
@@ -129,7 +133,32 @@ main {
     mask-image: radial-gradient(circle at 20% 20%, black 50%, transparent 90%);
     -webkit-mask-image: radial-gradient(circle at 20% 20%, black 50%, transparent 90%);
 }
+/* Placerar boxen till vänster om det centrerade innehållet */
+@media (min-width: 1200px) {
+    .weekly-sidebar-floating {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 220px; /* Justera bredden så den inte krockar med texten */
+        z-index: 10;
+    }
+}
 
+/* För lite mindre datorskärmar kan vi flytta ut den ännu mer eller dölja den */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .weekly-sidebar-floating {
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 180px;
+    }
+}
+
+.weekly-item-sidebar {
+    background-color: #f5f1e4;
+    border: 1px solid #b8a77b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
 
 
 /*          Galleri     */

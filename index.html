@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lillannas butik - Hem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,21 +19,55 @@
         </div>
         
     </header>
-    <main>
-        <section class="om-oss">
-            <h2>Om oss</h2>
-            <p>Lillannas butik är en oas av inredning<br>
+    <main class="container my-5 position-relative">
+
+    <aside class="weekly-sidebar-floating d-none d-lg-block">
+        <div class="weekly-item-sidebar p-3 rounded shadow-sm">
+            <h4 class="page-header-text fs-5 mb-3 text-center">Veckans vara</h4>
+            <img id="weekly-item-img-desktop" src="" alt="Veckans vara" class="img-fluid rounded mb-3">
+            <h5 id="weekly-item-title-desktop" class="address-style fs-6 mb-2 text-center">Laddar...</h5>
+            <p id="weekly-item-desc-desktop" class="small mb-3 text-center" style="font-size: 0.8rem;">Laddar...</p>
+            <div class="text-center mt-auto">
+                <span class="fw-bold price-tag" id="weekly-item-price-desktop"></span>
+            </div>
+        </div>
+    </aside>
+
+    <section class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 text-center">
+            <div class="om-oss-section">
+                <h2 class="page-header-text">Om oss</h2>
+                <p>Lillannas butik är en oas av inredning<br>
                 och växtlighet för hem och trädgård.<br>
                 Vi erbjuder ett handplockat sortiment<br>
                 av unika föremål och vackra växter.<br>
-                Välkomen att inspireras hos oss!</p>
-        </section>
-        <div class="button-container-hem">
-            <a href="galleri.html" class="btn">Galleri</a>
-            <a href="kontakt.html" class="btn">Kontakt</a>
+                Välkommen att inspireras hos oss!</p>
+            </div>
+
+            <div class="d-lg-none my-5">
+                <div class="weekly-item-sidebar p-4 rounded shadow-sm mx-auto" style="max-width: 350px;">
+                    <h4 class="page-header-text fs-4 mb-3 text-center">Veckans vara</h4>
+                    <img id="weekly-item-img-mobile" src="" alt="Veckans vara" class="img-fluid rounded mb-3">
+                    <h5 id="weekly-item-title-mobile" class="address-style fs-5 mb-2 text-center">Laddar...</h5>
+                    <p id="weekly-item-desc-mobile" class="mb-3 text-center">Laddar...</p>
+                    <div class="text-center">
+                        <span class="fw-bold fs-5 price-tag" id="weekly-item-price-mobile"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container-hem mt-5 d-flex justify-content-center gap-3">
+                <a href="galleri.html" class="btn">Galleri</a>
+                <a href="kontakt.html" class="btn">Kontakt</a>
+            </div>
         </div>
-    </main>
+    </section>
+
+</main>
     <img src="images/background-flower.png" alt="Dekoration" class="flower-corner-bottom-right">
     <img src="images/background-flower.png" alt="Dekoration" class="flower-corner-top-left">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
