@@ -1,9 +1,9 @@
 /* --- INSTÄLLNINGAR FÖR VECKANS VARA --- */
 const weeklyItem = {
-    title: "Vackra Plåtrosor",
-    description: "Handgjorda rosor i plåt som aldrig vissnar. Perfekta för både trädgård och inomhusbruk.",
-    price: "249 kr",
-    image: "images/Plåtrosor.jpg" 
+    title: "Veckans Fynd: Gröna Skålar",
+    description: "Ett set om tre matchande skålar i olika storlekar.",
+    price: "Alla 3 för 100 kr",
+    image: "images/Skålar.jpg" 
 };
 
 /* --- FUNKTION FÖR ATT UPPDATERA SIDAN --- */
@@ -40,7 +40,10 @@ const images = [
     {src: 'images/Fruktträd.jpg', alt: 'Fruktträd för plantering' },
     {src: 'images/Plåtrosor.jpg', alt: 'Plåtrosor gjorda av Emelie' },
     {src: 'images/Lyktor.png', alt: 'Olika typer av lyktor'},
-    {src: 'images/Ljus.png', alt: 'Polckarandiga ljus'}
+    {src: 'images/Ljus.png', alt: 'Polckarandiga ljus'},
+    {src: 'images/Artikel.jpg', alt: 'Artikel från tidningen'},
+    {src: 'images/Rödaljus.jpg', alt: 'Rödrandiga ljus'},
+    {src: 'images/Skålar.jpg', alt: 'Gröna räfflade skålar'}
 ];
 
 const galleryContainer = document.getElementById('gallery-container');
