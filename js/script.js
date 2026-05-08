@@ -36,6 +36,10 @@ window.onload = updateWeeklyItem;
 
 /* Galleri           */
 const images = [
+    {src: 'images/Vitblomma.jpg', alt: 'Vitblomma på ett träd'},
+    {src: 'images/Rosablomma.jpg', alt: 'Rosa och vita blommor'},
+    {src: 'images/Fruktträdvit.jpg', alt: 'Fruktträd med vita blommor'},
+    {src: 'images/Lilablomma.jpg', alt: 'Lila blommor'},
     {src: 'images/Finaform.jpg', alt: 'Keramik från Finaform' },
     {src: 'images/Fruktträd.jpg', alt: 'Fruktträd för plantering' },
     {src: 'images/Plåtrosor.jpg', alt: 'Plåtrosor gjorda av Emelie' },
@@ -44,6 +48,7 @@ const images = [
     {src: 'images/Artikel.jpg', alt: 'Artikel från tidningen'},
     {src: 'images/Rödaljus.jpg', alt: 'Rödrandiga ljus'},
     {src: 'images/Skålar.jpg', alt: 'Gröna räfflade skålar'}
+   
 ];
 
 const galleryContainer = document.getElementById('gallery-container');
